@@ -1,0 +1,23 @@
+<!DOCTYPE html> <!-- See docs/customizing.md for info -->
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+	<title>
+
+		{{- block "title" . }}
+		{{ partial "title.html" . -}}
+		{{- end }}
+	</title>
+	{{- block "head" . -}}
+		{{- partial "head.html" . -}}
+	{{- end -}}
+</head>
+<body>
+	{{- block "main" . }}
+		<!-- page content -->
+		<p>If you are seeing this, your page content hasn't been created.</p>
+	{{- end }}
+	{{- block "footer" . }}
+		{{- partial "footer.html" . -}}
+	{{ end }}
+</body>
+</html>

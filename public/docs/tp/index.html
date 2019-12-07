@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en-us">
+<head>
+	<title>
+		TP Git projet solo - My New Hugo Site
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<base href="http://example.org/">
+	<link rel="canonical" href="http://example.org/docs/tp/">
+
+
+<link rel="stylesheet" href="http://example.org/sass/_main.css" media="screen">
+
+
+
+	<meta name="generator" content="Hugo 0.60.1" />
+</head>
+<body><section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+					<h1 class="title is-3">TP Git projet solo</h1><h2 id="site-web-avec-publications-fixe">Site web avec publications fixe</h2>
+<h3 id="objectifs">Objectifs</h3>
+<p>&lt; image résultat final &gt;</p>
+<p>Nous allons déployer un site web personnalisé sur une gitlab pages.</p>
+<h3 id="pré-requis">Pré-Requis</h3>
+<ul>
+<li>Base en Git</li>
+<li>Base en HTML</li>
+<li>Compte Gitlab personnel</li>
+</ul>
+<h3 id="etapes">Etapes</h3>
+<h4 id="optionnel--installation-de-ruby-sur-votre-machine">(optionnel) Installation de Ruby sur votre machine</h4>
+<p><a href="https://jekyllrb.com/docs/installation/">https://jekyllrb.com/docs/installation/</a></p>
+<h4 id="fork-du-site-web">Fork du site web</h4>
+<p>Pour gagner du temps j'ai déjà préinstallé un thème.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@gitlab.huma-num.fr:rzine/formations/git-gitlab/templatesiteperso.git
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bundle install
+</code></pre></div><p>De base avant customisation par ajout d'un thème le site web ressemble à cela :</p>
+<figure>
+    <img src="/ox-hugo/jekyll_simple.png" height="80%"/> 
+</figure>
+
+<p>Pourquoi un fork et pas un clone ? On ne sait jamais vous voudriez peut être
+proposer des modifications dans le template du site web original &hellip;</p>
+<p>Si vous voulez consulter votre site web en local, il faut que vous ayez
+installer ruby sur votre ordinateur. Ensuite il suffit de se positionner
+dans le bon répertoire et de lancer un serveur web local avec les commandes suivantes :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bundle exec jekyll serve
+</code></pre></div><p>Le résultat est visible dans votre navigateur internet à l'url suivante : <a href="http://localhost:4000">http://localhost:4000</a></p>
+<h2 id="publications-dynamique-avec-orcid-r-et-vitae">Publications dynamique avec Orcid / R et Vitae</h2>
+<h3 id="fork-du-dépot-template">Fork du dépot template</h3>
+<h3 id="clone-du-dépot-en-local">Clone du dépot en local</h3>
+
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+  <div class="container content">
+	<div class="has-text-centered">
+		<p>Add config: Params.footer
+		   Add config: Params.logotype 
+		   </p>
+		<hr>
+		<p class="has-text-grey is-size-7">
+		Add config: Params.subfooter 
+		Add config: Copyright 
+		</p>
+	</div>
+  </div>
+</footer>
+
+
+</body>
+</html>
