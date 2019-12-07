@@ -19,7 +19,7 @@
 	{{- end }}
 
 {{ $styles := resources.Get "sass/_main.scss" | toCSS  }}
-<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+<link rel="stylesheet" href="{{ $styles.Permalink }}" >
 
 <!--	<link rel="preload" href="{{ $.Site.Params.cssPath | default "css/_main.css" | absURL }}" as="style">-->
 <!--	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/_main.css" | absURL }}">-->
